@@ -1,0 +1,924 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background-color: LemonChiffon;
+    height: 50px;
+    align-items: center;
+    justify-content: center; 
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.main-header {
+  height: 75px;
+  display: flex;
+
+  max-width: 100%;
+  background: linear-gradient(334deg, #DEDA73, #EDA86A, #DAA24F);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+.logo{
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.time-work{
+margin-left: 20px;
+margin-top: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.headli {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  height: 60px;
+}
+.main-header > li{
+  display: inline-block;  
+  position: relative;
+}
+.main-header > li > a{
+  display: inline-block;
+  padding: 20px;
+  color: inherit;
+  text-decoration: none; 
+  transition: background-color 0.25s, color 0.15s;
+}
+.main-header > li > a:hover{
+  color: white;
+  background-color: PapayaWhip;
+  box-sizing: 20px;
+}
+.main-header > li:hover > ul a{
+  opacity: 1;
+}
+.main-header > li:hover > ul li{
+  height: 40px;
+  opacity: 1;
+}
+.inner_menu{
+  position: absolute;
+ margin-top: 0px;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  white-space: nowrap;
+  background-color: LemonChiffon;
+
+  z-index: 10;
+}
+.inner_menu > li{
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.4s;
+}
+.inner_menu > li > a{
+  width: 235px;
+  display: inline-block;
+  padding: 10px 20px; 
+  color: inherit;
+  text-decoration: none; 
+  height: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.5s;
+  
+}
+.inner_menu > li > a:hover{
+  color:blueviolet;
+  background-color: PapayaWhip; 
+}
+*{
+  box-sizing: border-box;
+
+}
+
+
+
+
+ul.hr {
+  margin: 0; /* Обнуляем значение отступов */
+ }
+ ul.hr li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 5px; /* Отступ слева */
+ }
+ .list{
+
+  position: relative;
+  margin-top: 20px;
+ }
+
+.bord{
+ 
+  padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ul.hr{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+  ul.hr li{
+  position: relative;
+  list-style: none;
+}
+ul.hr li a{
+  position: relative;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+ul.hr li a::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  -webkit-text-stroke: 1px  var(--clr);
+}
+ul.hr li a:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+} 
+
+
+
+
+
+
+.person{
+margin-top: 14px;
+border-radius: 50%;
+display: flex;
+border: 2px solid black;
+margin-left: 10px;
+width: 30px;
+min-width: 30px;
+height: 30px;
+justify-content: center;
+margin-right: 10px;
+}
+.person svg {
+margin: auto;
+}
+
+
+.person:hover {
+  background-color:black;
+  fill:aliceblue;
+} 
+ 
+.mek {
+  background-color: black;
+}
+
+
+
+
+
+
+
+.rek {
+height: 677px;
+background: url(field.jpg) no-repeat;
+}
+
+.raz {
+height:40px;
+text-align: left;
+margin-left: 80px;
+margin-top: 20px;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top:45%;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+}
+.overlay {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.overlay h1 {
+  text-align:center;
+  color:#fff;
+  font-size: 70px;
+  margin-top:13%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bt > button {
+  padding: 0.8em 1.8em;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 10000;
+  font-family: inherit;
+  color: white;
+  z-index: 100009;
+  margin-left: 45%;
+ }
+ 
+ .bt > button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: lightgray;
+  transition: .5s ease;
+  z-index: -1;
+ }
+ 
+ .bt> button:hover::before {
+  width: 105%;
+
+ }
+ 
+ .bt> button:hover {
+  color: #111;
+
+ }
+.skidl{
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+}
+
+.headlist{
+  height: 100%;
+}
+
+.items-row {
+  display:flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+.itemm {
+  background-color: SandyBrown;
+  border-radius: 35px;
+  margin: 2px;
+  box-sizing: border-box;
+  flex: 1 1 20%;
+  transition: flex 0.4s ease;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 19px;
+  font-family:'Trebuchet MS', Helvetica, sans-serif;
+  color:Ivory;
+}
+.itemm:hover {
+  flex: 0.000000001 0.00000001 400px;
+  background-size: 100% 100%;
+  background-color: Bisque;
+  color:SandyBrown;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rekcards{
+height: 17em;
+margin-top: 50px;
+margin-left: 10px;
+display: flex;
+flex-wrap: wrap;
+max-height:2000px ;
+}
+
+.card {
+  margin-left: 12px;
+  margin-right: 10px;
+  display: block;
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.card::after {
+  content: "В корзину";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 250ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Добавлено !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image1 {
+  background: url(gala.jpg) no-repeat;
+}
+
+.image2 {
+  background: url(negrulya.jpg) no-repeat;
+}
+.image3 {
+  background: url(rofshor.jpg) no-repeat;
+}
+.image4 {
+  background: url(lyana.jpg) no-repeat;
+}
+
+.image5 {
+  background: url(novocher.jpg) no-repeat;
+}
+.image6 {
+  background: url(vostorg.png) no-repeat;
+}
+.image7 {
+  background: url(sidlis.jpg) no-repeat;
+}
+
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+
+.kat{
+  position: relative;
+  background: url(kat.png);
+  width: 1518px;
+  height: 273px;
+}
+.kat a{
+    position: absolute;
+    width:100%;
+    height: 100%; /* Высота на весь слой */
+    padding-left: 500px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+.podrek{
+text-align: center;
+font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1600px) {
+.adapt_tel{
+  display: none;
+}
+}
+
+@media (max-width: 768px) {
+  .adapt_tel{
+    display: none;
+  }
+  .main-header  .headli{
+    display: none;
+  }
+  .time-work{
+    display: none;
+  }
+.kat{
+ display: none;
+}
+.overlay h1{
+  font-size: 15px;
+}
+.overlay button{
+  margin-left: 40%;
+}
+.rekcards{
+  height: 800px;
+  display: flex;
+  justify-items: center;
+margin-top: 30px;
+margin-left: 10px;
+display: flex;
+justify-content: center;
+max-height:2000px ;
+}
+
+
+}
+
+  
+@media screen and (max-width: 820px) and (min-width: 360px) {
+  .hrformob{
+    border-style: solid;
+border-color: black;
+  }
+  
+  .podrek{
+    text-align: center;
+    font-size: 20px;
+    }
+  .comp{
+    display: none;
+  }
+  .adapt_tel{
+    display: contents;
+  }
+
+.logo {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 71px;
+  height: 13px;
+}
+.top{
+  display: flex;
+  justify-content: center;
+}
+
+.time-work{
+display: none;
+}
+
+.kat{
+  display: none;
+}
+
+
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.overlay {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 4;
+}
+.overlay h1 {
+  text-align:center;
+  color:#fff;
+  font-size: 10px;
+  margin-top:13%;
+  margin-left: 0;
+}
+
+
+
+
+.bt > button {
+
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: .3s;
+  z-index: 10000;
+  font-family: inherit;
+  color: white;
+  z-index: 100009;
+  margin-left: 35%;
+ }
+ 
+ .bt > button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: lightgray;
+  transition: .5s ease;
+  z-index: -1;
+ }
+ 
+ .bt> button:hover::before {
+  width: 105%;
+
+ }
+ 
+ .bt> button:hover {
+  color: #111;
+ }
+.skidl{
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+
+}
+}
+
+
